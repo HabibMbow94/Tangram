@@ -1,10 +1,10 @@
 body {
-    align-items: center;
+    margin: 0;
 }
 
 #block-page {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,120 +19,108 @@ body {
     align-items: center;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#block_figure {
-    display: flex;
-    background-color: white;
-    width: 40rem;
-    height: 40rem;
-    margin: auto;
-    position: relative;
-}
-
 .figure {
     position: absolute;
 }
 
 #bigYellow-Triangle {
-    width: 20rem;
-    height: 40rem;
+    width: 10rem;
+    height: 20rem;
     clip-path: polygon(0% 50%, 100% 0%, 100% 100%);
     background-color: #f9c30f;
 }
 
 #bigGreen-Triangle {
-    width: 40rem;
-    height: 20rem;
+    width: 20rem;
+    height: 10rem;
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
     background-color: #33c763;
 }
 
 #blue-Triangle {
-    width: 10rem;
-    height: 20rem;
+    width: 5rem;
+    height: 10rem;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     background-color: #3396f8;
 }
 
 #greenSmallTriangle {
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
     background-color: #8bc03d;
 }
 
 #red-Square {
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     background-color: #f96764;
 }
 
 #blue-Parallelogram {
-    width: 35rem;
-    height: 10rem;
+    width: 17.5rem;
+    height: 5rem;
     clip-path: polygon(28.5% 0%, 85.6% 0%, 57.5% 100%, 0% 100%);
     background-color: #8f91d7;
 }
 
 #orange-Triangle {
-    width: 20rem;
-    height: 10rem;
+    width: 10rem;
+    height: 5rem;
     clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
     background-color: #fe9832;
 }
 
 #blue-Triangle {
-    width: 10rem;
-    height: 20rem;
+    width: 5rem;
+    height: 10rem;
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     background-color: #3396f8;
 }
 
-
 .bigYellow-Triangle {
-    /* transform: translateX(9.5rem) translateY(25.5rem) rotate(-135deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .bigGreen-Triangle {
-    /* transform: translateX(16.5rem) translateY(28.5rem) rotate(90deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .blue-Triangle {
-    /* transform: translateX(25rem) translateY(5rem) rotate(135deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .red-Square {
-    /* transform: translateX(36.5rem) translateY(38.5rem) rotate(90deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .blue-Parallelogram {
-    /* transform: translateX(-3.3rem) translateY(62.2rem) rotate(45deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .orange-Triangle {
-    /* transform: translateX(26.45rem) translateY(48.4rem) rotate(180deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
 }
 
 .greenSmallTriangle {
-    /* transform: translateX(16.5rem) translateY(48.4rem) rotate(-135deg); */
-    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
     transition: transform 2s;
+}
+
+@media screen and (max-width: 1024px) {
+    #main {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        transform: scale(75%);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #main {
+        transform: scale(30%);
+    }
 }
