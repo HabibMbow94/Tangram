@@ -35,12 +35,6 @@ body{
 
 }
 
-#blue-Triangle{
-    width: 5rem;
-    height: 10rem;
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    background-color:#3396f8;
-}
 #greenSmallTriangle{
     width: 10rem;
     height: 10rem;
@@ -75,4 +69,20 @@ body{
     clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
     background-color:#3396f8;
 
+}
+@media screen and (max-width: 1024px) {
+    #main {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        transform: scale(75%);
+    }
+}
+@media screen and (max-width: 320px) {
+    #main {
+        transform: scale(30%);
+    }
 }
