@@ -1,0 +1,87 @@
+body {
+    align-items: center;
+}
+
+#block-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .bigYellow-Triangle {
+    left: 20rem;
+}
+
+.bigGreen-Triangle {
+    top: 20rem;
+}
+
+.blue-Triangle {
+    top: 20rem;
+}
+
+.red-Square {
+    top: 10rem;
+}
+
+.blue-Parallelogram {
+    left: 10rem;
+}
+
+.orange-Triangle {
+    top: 10rem;
+    left: 10rem;
+} */
+
+.bigYellow-Triangle {
+    transform: translateX(25rem) translateY(10rem) rotate(360deg);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.bigGreen-Triangle {
+    transform: translate(5rem, 30rem) rotate(360deg);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.blue-Triangle {
+    transform: translate(5rem, 30rem);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.red-Square {
+    transform: translate(5rem, 20rem);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.blue-Parallelogram {
+    transform: translate(15rem, 10rem) rotate(360deg);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.orange-Triangle {
+    transform: translate(15rem, 20rem) rotate(360deg);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
+
+.greenSmallTriangle {
+    transform: translate(5rem, 10rem);
+    /* transition: transform 2s cubic-bezier(.45, -1.12, .35, 1.78); */
+    transition: transform 2s;
+}
