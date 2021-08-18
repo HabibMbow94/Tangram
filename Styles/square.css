@@ -14,35 +14,37 @@
     align-items: center;
 } */
 
-.bigYellow-Triangle{
+.bigYellow-Triangle {
     transform: translateX(5rem) translateY(0rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transition: transform 1s;
 }
-.bigGreen-Triangle{
+
+.bigGreen-Triangle {
     transform: translateX(0rem) translateY(5rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transition: transform 1s;
 }
 
-.blue-Triangle{
+.blue-Triangle {
     transform: translateX(-7.5rem) translateY(5rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transition: transform 1s;
 }
 
-.red-Square{
-    transform: translate(-5rem,0rem);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+.red-Square {
+    transform: translate(-5rem, 0rem);
+    transition: transform 1s;
 }
 
-.blue-Parallelogram{
+.blue-Parallelogram {
     transform: translateX(3.7rem) translateY(-7.5rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
-    
+    transition: transform 1s;
 }
+
 .orange-Triangle {
     transform: translateX(0rem) translateY(-2.5rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transition: transform 1s;
 }
+
 .greenSmallTriangle {
     transform: translateX(-5rem) translateY(-5rem) rotate(360deg);
-    transition: transform 1s cubic-bezier(.45, -1.12, .35,1.78);
+    transition: transform 1s;
 }
