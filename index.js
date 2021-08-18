@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> testoussama
 var theme = document.getElementById("change-style");
 
 // Change the value of href attribute
