@@ -17,11 +17,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(75%);    
 }
 
 .figure {
     position: absolute;
 }
+
+/* MAKE TRIANGLE */
 
 #bigYellow-Triangle {
     width: 10rem;
@@ -79,33 +82,37 @@ body {
     background-color: #3396f8;
 }
 
+/* FIGURE TRANSITION */
+
 .bigYellow-Triangle {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .bigGreen-Triangle {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .blue-Triangle {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .red-Square {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .blue-Parallelogram {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .orange-Triangle {
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .greenSmallTriangle {
-    transition: transform 2s;
+    transition: transform 1s;
 }
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 1024px) {
     #main {
