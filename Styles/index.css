@@ -89,3 +89,83 @@ body{
         transition: transform 1s;
     }
 }
+/* nav */
+nav {
+    display: flex;
+    flex-flow: wrap;
+}
+/* dark mode */
+header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#button-darkmode{
+    margin: 5px;
+}
+button{
+    width: 5rem;
+    height: 2rem;
+    margin: 2px;
+}
+button:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: .5s;
+    background-color: #9e9e9e;
+}
+nav {
+    margin: 5px;
+    justify-content: space-between;
+}
+.checkbox{
+	display: none;
+}
+.label{
+	height: 26px;
+	width: 50px;
+	background: rgba(29, 29, 29, 0.8);
+	padding: 5px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative; 
+	transform: scale(1.2);
+	box-shadow: 1px 1px 1px #ffffff;
+}
+.label .ball{
+	background-color: #aaaaaa;
+	border-radius: 50%;
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	top: 5px;
+	left: 4px;
+	transform: translateX(0px);
+	transition: transform 0.4s cubic-bezier(.45, -1.12, .35,1.78);
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(29px);
+}
+.bxs-moon{
+	color: rgb(233, 233, 233);
+}
+.jour{
+	background-color: #2b2a2a;
+	
+}
+
+.jour .label {
+	box-shadow: 1px 1px 1px #000000;
+	background-color: #a7a7a7ee;
+}
+.jour .label .ball{
+	background-color: rgba(29, 29, 29, 0.904);
+}
+
+.bxs-moon{
+	color: rgba(255, 255, 255, 0.8);
+}

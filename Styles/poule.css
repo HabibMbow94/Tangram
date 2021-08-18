@@ -1,3 +1,23 @@
+
+@media screen and (max-width: 1024px) {
+    #main {
+        transform: scale(100%);
+        transition: transform 1s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main {
+        transform: scale(70%);
+        transition: transform 1s;
+    }
+}
+@media screen and (max-width: 320px) {
+    #main {
+        transform: scale(45%);
+        transition: transform 1s;
+    }
+}
 .bigYellow-Triangle{
     transform: translateX(5rem)  translateY(5rem)  rotate(45deg);	
     transition: transform 1s ;

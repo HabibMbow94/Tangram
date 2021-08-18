@@ -6,13 +6,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="Styles/index.css" rel="stylesheet" type="text/css">
         <link id="change-style" href="Styles/basic.css" rel="stylesheet" type="text/css">
-        <title>Titre</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>Tangram</title>
     </head>
 
     <body>
         <div id="block-page">
             <header>
+                <div id="button-darkmode">
+                    <input type="checkbox" class="checkbox" id="dark-mode" /><!-- dark mode -->
+                    <label for="dark-mode" class="label">
+                        <i class='bx bxs-sun' ></i>
+                        <i class='bx bxs-moon'></i>
+                        <span class="ball">
+                        </span>
+                    </label>
+                </div>
                 <nav>
+                    
                     <button onclick="swap('Styles/basic.css')">
                         Basic
                     </button>

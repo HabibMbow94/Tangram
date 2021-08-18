@@ -13,3 +13,10 @@ function swap(cssFile) {
     var link = document.getElementById("change-style")
     link.href = cssFile;
 }
+
+// dark mode
+const darkMode = document.getElementById('dark-mode');
+
+darkMode.addEventListener('change', ()=>{
+    document.getElementById('block-page').classList.toggle('jour');
+})
