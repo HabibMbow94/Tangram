@@ -1,5 +1,6 @@
 #main {
     transform: scale(75%);
+    transition: transform 1s;
 }
 .bigYellow-Triangle {
     transform: translateY(10.5rem);
