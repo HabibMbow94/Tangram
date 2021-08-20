@@ -8,46 +8,46 @@
 
 @media screen and (max-width: 700px) {
     #main {
-        transform: scale(75%);
+        transform: scale(50%);
         transition: transform 1s;
     }
 }
 @media screen and (max-width: 320px) {
     #main {
-        transform: scale(50%);
+        transform: scale(40%);
         transition: transform 1s;
     }
 }
+
 .bigYellow-Triangle{
-    transform:  translateX(10.5rem)  translateY(-3.5rem) rotate(180deg);	
+    transform: translateX(4rem) translateY(7rem) rotate(-135deg);
     transition: transform 1s ;
 }
 .bigGreen-Triangle{
-    transform: translateX(-8rem) translateY(5rem) rotate(-35deg);
-    transition: transform 1s ;
+    transform: translateX(11rem) translateY(7rem) rotate(-135deg);
+    transition: transform 1s;
 }
 
 .blue-Triangle{
-    transform:  translateX(6rem)  translateY(9rem) rotate(-45deg);	
-    transition: transform 1s ;
-
+    transform: translateX(-10.3rem) translateY(2.6rem) rotate(0deg);
+    transition: transform 1s;
 }
 
 .red-Square{
-    transform: translate(-5rem,10rem);
-    transition: transform 1s ;
+    transform: translate(-7.8rem,-2.3rem);
+    transition: transform 1s;
 }
 
 .blue-Parallelogram{
-    transform: translateX(-6rem) translateY(-10rem) rotate(45deg);
+    transform: translateX(-4.1rem) translateY(5.1rem) rotate(0deg);
     transition: transform 1s ;
     
 }
 .orange-Triangle {
-    transform: translateX(-10rem) translateY(-5.5rem) rotate(450deg);
+    transform: translateX(-2.8rem) translateY(0.2rem) rotate(180deg);
     transition: transform 1s ;
 }
 .greenSmallTriangle {
-    transform:  translateX(10rem)  translateY(10rem) rotate(180deg);	
+    transform: translateX(-17.8rem) translateY(2.6rem) rotate(-180deg);
     transition: transform 1s ;
 }
