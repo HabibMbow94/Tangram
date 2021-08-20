@@ -4,10 +4,17 @@
         transition: transform 1s;
     }
 }
+@media screen and (min-width: 1024px) {
+   
+    #main {
+        transform: scale(60%);
+        transition: transform 1s;
+    }
+}
 
 @media screen and (max-width: 700px) {
     #main {
-        transform: scale(75%);
+        transform: scale(70%);
         transition: transform 1s;
     }
 }

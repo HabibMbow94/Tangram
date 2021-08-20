@@ -1,22 +1,35 @@
-
-var theme = document.getElementById("change-style");
-
-// Change the value of href attribute
-// to change the css sheet.
-if (theme.getAttribute("href") != "Styles/square.css") {
-	theme.setAttribute("href", "Styles/square.css");
-} else {
-		theme.setAttribute("href", "Styles/square.css");
-}
-
+// FUNCTIONALITY FOR BUTTONS
 function swap(cssFile) {
-    var link = document.getElementById("change-style")
+    var link = document.getElementById("style");
     link.href = cssFile;
 }
 
-// dark mode
-const darkMode = document.getElementById('dark-mode');
 
-darkMode.addEventListener('change', ()=>{
-    document.getElementById('block-page').classList.toggle('jour');
-})
+/* Functionality for Dark Mode */
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.className === "dark-mode") {
+        document.getElementById("dark-mode").src = "Images/moon.png";
+    } else {
+        document.getElementById("dark-mode").src = "Images/sun.png";
+    }
+}
+
+
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.mainMenu');
+const openMenu = document.querySelector('.openMenu');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+
+function close(){
+    mainMenu.style.top = '-100%';
+}

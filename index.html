@@ -1,86 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="Styles/index.css" rel="stylesheet" type="text/css">
-        <link id="change-style" href="Styles/basic.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <title>Tangram</title>
-    </head>
 
-    <body>
-        <div id="block-page">
-            <header>
-                <div id="button-darkmode">
-                    <input type="checkbox" class="checkbox" id="dark-mode" /><!-- dark mode -->
-                    <label for="dark-mode" class="label">
-                        <i class='bx bxs-sun' ></i>
-                        <i class='bx bxs-moon'></i>
-                        <span class="ball">
-                        </span>
-                    </label>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Style Sheets Integration -->
+    <link href="Styles/index.css" rel="stylesheet" type="text/css" />
+    <link id="style" href="Styles/index.css" rel="stylesheet" type="text/css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Title -->
+    <title>Tangram</title>
+</head>
+
+<body>
+    <!-- Start of body -->
+    <div id="block-page">
+        <header>
+            <nav>
+                 <!-- Dark Mode Button -->
+                <div><img src="Images/moon.png" alt="logo menu" class="dark-mode" id="dark-mode" onclick="darkMode()"></div>
+                <!--Logo menu-->
+                <div class="openMenu"><i class='bx bx-menu'></i></div>
+                <div class="mainMenu">
+                    <button id="index" onclick="swap('Styles/style.css')" class="active">Index</button>
+                    <button id="square" onclick="swap('Styles/square.css')">Square</button>
+                    <button id="bougie" onclick="swap('Styles/bougie.css')">Bougie</button>
+                    <button id="voilier" onclick="swap('Styles/voilier.css')">Voilier</button>
+                    <button id="cheval" onclick="swap('Styles/cheval.css')">Cheval</button>
+                    <button id="poule" onclick="swap('Styles/poule.css')">Poule</button>
+                    <button id="marteau" onclick="swap('Styles/marteau.css')">Marteau</button>
+                    <button id="pyramide" onclick="swap('Styles/pyramide.css')">Pyramide</button>
+                    <button id="thsirt" onclick="swap('Styles/tshirt.css')">T-Shirt</button>
+                    <div class="closeMenu"><i class='bx bx-x'></i></div>
                 </div>
-                <nav>
-                    
-                    <button onclick="swap('Styles/basic.css')">
-                        Basic
-                    </button>
-                    <button onclick="swap('Styles/square.css')">
-                        Square
-                    </button >
-                    <button onclick="swap('Styles/poule.css')">
-                        Poule
-                    </button>
-                    <button onclick="swap('Styles/cheval.css')">
-                        Cheval
-                    </button>
-                    <button onclick="swap('Styles/bougie.css')">
-                        Bougie
-                    </button>
-                    <button onclick="swap('Styles/coq.css')">
-                        Coq
-                    </button>
-                    <button onclick="swap('Styles/marteau.css')">
-                        Marteau
-                    </button>
-                    <button onclick="swap('Styles/voilier.css')">
-                        Voilier
-                    </button>
-                    <button onclick="swap('Styles/pyramide.css')">
-                        Pyramide
-                    </button>
-                    <button onclick="swap('Styles/tshirt.css')">
-                        T-shirt
-                    </button>
-                </nav>
-            </header>
-            <div id="main">
-                    <div id="greenSmallTriangle" class="figure greenSmallTriangle">
-    
-                    </div>
-                    <div id="blue-Triangle" class="figure blue-Triangle">
-    
-                    </div>
-                    <div id="red-Square" class="figure red-Square">
-                            
-                    </div>
-                    <div id="orange-Triangle" class="figure orange-Triangle">
-                            
-                    </div>
-                    <div id="blue-Parallelogram" class="figure blue-Parallelogram">
-    
-                    </div>
-                    <div id="bigGreen-Triangle" class="figure bigGreen-Triangle">
-    
-                    </div>
-                    <div id="bigYellow-Triangle" class="figure bigYellow-Triangle">
-    
-                    </div> 
-            </div>
+            </nav>
+        </header>
+
+        <div id="main">
+            <div id="greenSmallTriangle" class="figure greenSmallTriangle"></div>
+            <div id="blue-Triangle" class="figure blue-Triangle"></div>
+            <div id="red-Square" class="figure red-Square"></div>
+            <div id="orange-Triangle" class="figure orange-Triangle"></div>
+            <div id="blue-Parallelogram" class="figure blue-Parallelogram"></div>
+            <div id="bigGreen-Triangle" class="figure bigGreen-Triangle"></div>
+            <div id="bigYellow-Triangle" class="figure bigYellow-Triangle"></div>
         </div>
-        
-        <script src="index.js"></script>
-    </body>
-</html>
+    </div>
+
+    <script src="index.js"></script>
+</body>

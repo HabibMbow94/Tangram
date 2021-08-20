@@ -3,18 +3,33 @@
     #main {
         transform: scale(100%);
         transition: transform 1s;
+        margin-bottom: 10rem;
+        margin-left: 5rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 1024px) {
     #main {
         transform: scale(50%);
         transition: transform 1s;
     }
 }
+
+@media screen and (max-width: 700px) {
+    #main {
+        transform: scale(100%);
+        transition: transform 1s;
+    }
+}
 @media screen and (max-width: 320px) {
     #main {
-        transform: scale(45%);
+        transform: scale(100%);
+        transition: transform 1s;
+    }
+}
+@media screen and (min-width: 320px) {
+    #main {
+        transform: scale(60%);
         transition: transform 1s;
     }
 }
